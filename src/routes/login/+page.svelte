@@ -1,4 +1,5 @@
 <script>
+    import "$lib/styles/form.css"
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
 
@@ -30,29 +31,3 @@
         <p>Don't have an account? Click here to sign up</p>
     </form>
 </Card>
-
-<style>
-    form{
-        width: 100%;
-        padding: 60px;
-        text-align: center;
-    }
-
-    .login-btn{
-        width: 100%;
-        height: 45px;
-        background: #0000004c;
-        border: 1px solid white;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1.3em;
-        color: white;
-        margin-bottom: 20px;
-        transition: 0.2s ease;
-    }
-
-    .login-btn:hover{
-        background: white;
-        color: black
-    }
-</style>
