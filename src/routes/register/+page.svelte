@@ -48,6 +48,6 @@
         <Input {...passwordInput} bind:value={password}/>
         <Input {...confirmPasswordInput} bind:value={confirmPassword}/>
         <button class="login-btn" type="submit" >Log in</button>
-        <p>Don't have an account? Click here to sign up</p>
+        <p>Already have an account? <a class="link" href="/login">Log in here.</a></p>
     </form>
 </Card>

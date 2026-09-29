@@ -28,6 +28,6 @@
         <Input {...loginInput} bind:value={email}/>
         <Input {...passwordInput} bind:value={password}/>
         <button class="login-btn" type="submit" >Log in</button>
-        <p>Don't have an account? Click here to sign up</p>
+        <p>Don't have an account? <a class="link" href="/register">Click here to sign up.</a></p>
     </form>
 </Card>
