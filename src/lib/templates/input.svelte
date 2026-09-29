@@ -14,7 +14,7 @@
         width: 100%;
         height: 50px;
         border-bottom: 1px solid white;
-        margin: 2rem 0 2rem 0;
+        margin: 1.25rem 0;
     }
     .input-box label{
         position: absolute;
