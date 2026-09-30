@@ -5,7 +5,7 @@
 <div class="input-box">
     <span class="icon"><ion-icon name={details.iconName}></ion-icon></span>
     <label for={details.inputID}>{details.labelText}</label>
-    <input id={details.inputID} type={details.inputType} required={details.required} bind:value={value}>
+    <input id={details.inputID} type={details.inputType} placeholder={details?.placeholderText} required={details.required} bind:value={value}>
 </div>
 
 <style>

@@ -12,6 +12,7 @@
         inputID: "code",
         labelText: "",
         inputType: "text",
+        placeholderText: "ABCDEFG",
         required: false
     }
 
