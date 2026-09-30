@@ -9,6 +9,14 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<main class="page">
+	{@render children()}
+</main>
+
+<footer>
+	<p>Copyright</p>
+</footer>
+
 <style>
 	:global(*){
 		color: white;
@@ -20,11 +28,25 @@
 	:global(body){
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;   
 		min-height: 100vh;
 		background-color: black;
 	}
-</style>
 
-{@render children()}
+	.page{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px 20px 40px;
+	}
+
+	footer{
+		text-align: center;
+		font-size: 1.1rem;
+		padding: 32px;
+	}
+
+	footer p{
+		color: rgba(255, 255, 255, 0.369);
+	}
+</style>
