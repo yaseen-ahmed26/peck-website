@@ -1,4 +1,3 @@
-<!--JavaScript -->
 <script>
     let {
         title = "Title",
@@ -7,15 +6,15 @@
     } = $props()
 </script>
 
-<!--HTML -->
 <div class="wrapper">
-    <h2>{title}</h2>
-    <p>{description}</p>
+    <div class="info">
+        <h2>{title}</h2>
+        <p>{description}</p>
+    </div>
 
     {@render children?.()}
 </div>
 
-<!--CSS -->
 <style>
     .wrapper{
         display: flex;
@@ -30,12 +29,18 @@
         height: 38.2rem;
     }
 
-    .wrapper h2{
-        font-size: 2rem;
-        margin-bottom: 12px;
-    }
+    .info{
+		margin-bottom: 35px;
+		text-align: center;
+	}
 
-    .wrapper p{
-        font-size: 1.2rem;
-    }
+	.info h2{
+		margin-bottom: 16px;
+		font-size: 2rem;
+	}
+
+	.info p{
+		padding: 0 50px;
+		font-size: 1rem;
+	}
 </style>
