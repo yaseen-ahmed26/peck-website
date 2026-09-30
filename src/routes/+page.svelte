@@ -8,6 +8,7 @@
     <a href="/register" aria-label="Login">Register</a>
     <a href="/details" aria-label="Login">Details</a>
     <a href="/code" aria-label="Login">Code</a>
+    <a href="/delete" aria-label="Login">Delete</a>
 </Card>
 
 <style>
