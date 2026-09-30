@@ -6,6 +6,7 @@
 <Card title={"Temporary"} description={"Hello there"}>
     <a href="/login" aria-label="Login">Login</a>
     <a href="/register" aria-label="Login">Register</a>
+    <a href="/details" aria-label="Login">Details</a>
 </Card>
 
 <style>
