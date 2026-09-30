@@ -10,7 +10,6 @@
     const emailInput = {
         iconName: "mail",
         inputID: "update-email",
-        labelText: user.account.email,
         inputType: "email",
         required: false
     }
@@ -18,7 +17,6 @@
     const usernameInput = {
         iconName: "person-outline",
         inputID: "update-username",
-        labelText: user.account.username,
         inputType: "text",
         required: false
     }
@@ -67,8 +65,8 @@
 
 <Card title="Account" description="Update your account details here.">
     <form action="#">
-        <Input {...emailInput} bind:value={newEmail}/>
-        <Input {...usernameInput} bind:value={newUsername}/>
+        <Input {...emailInput} labelText={user.account.email} bind:value={newEmail}/>
+        <Input {...usernameInput} labelText={user.account.username} bind:value={newUsername}/>
         <Input {...passwordInput} bind:value={newPassword}/>
         <Input {...confirmPasswordInput} bind:value={currentPassword}/>
         <button {onclick} class="login-btn" type="submit" disabled={currentPassword === ""} >Update</button>
