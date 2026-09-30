@@ -145,6 +145,7 @@ export async function logOut(){
     });
 
     if(response.ok){
-        
+        user.account = {}
+        user.save = {}
     }
 }
