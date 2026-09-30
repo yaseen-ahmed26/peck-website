@@ -1,7 +1,6 @@
 <script>
     // @ts-nocheck
 
-    import "$lib/styles/form.css"
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
     import { makeHTTPRequest, logOut } from "$lib/api.svelte";
