@@ -7,3 +7,6 @@
     - It had a datetime in max_age instead of being at expires. So the website discarded it.
 - The Svelte website and the backend were on different domains (localhost vs 127.0.0.1)
     - Configured Vite to make all server fetch requests through 127.0.0.1 if the environemnt is dev. Otherwise it just uses the normal Render URL.
+- We probbaly won't have a leaderboard page.
+    - 2 reasons: wasn't happy with the last one, it was very basic. You only saw the top 5 users with a single stat.
+    - The backend will be changing to have JSONB for saves, rather than individual stats for columns,making leaderboards much harder to do.
