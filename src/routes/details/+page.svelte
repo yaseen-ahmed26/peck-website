@@ -39,22 +39,38 @@
         required: true
     }
 
-    let email = $state();
-    let username = $state();
-    let password = $state();
-    let confirmPassword = $state()
+    let newEmail = $state();
+    let newUsername = $state();
+    let newPassword = $state();
+    let currentPassword = $state()
 
     async function onclick(){
+        const updateData = {
+            username: newUsername || null,
+            email: newEmail || null,
+            password: newPassword || null,
+            current_password: currentPassword
+        }
 
+        try{            
+            const data = await makeHTTPRequest({
+                requestType: "PATCH",
+                requestBody: updateData,
+                requestHeaders: {"Content-Type": "application/json"},
+                requestURL: `users/${user.account.id}`
+            })
+        }catch (error){
+           console.log(error.message)
+        }
     }
 </script>
 
 <Card title="Account" description="Update your account details here.">
     <form action="#">
-        <Input {...emailInput} bind:value={email}/>
-        <Input {...usernameInput} bind:value={username}/>
-        <Input {...passwordInput} bind:value={password}/>
-        <Input {...confirmPasswordInput} bind:value={confirmPassword}/>
-        <button {onclick} class="login-btn" type="submit" disabled={confirmPassword === ""} >Update</button>
+        <Input {...emailInput} bind:value={newEmail}/>
+        <Input {...usernameInput} bind:value={newUsername}/>
+        <Input {...passwordInput} bind:value={newPassword}/>
+        <Input {...confirmPasswordInput} bind:value={currentPassword}/>
+        <button {onclick} class="login-btn" type="submit" disabled={currentPassword === ""} >Update</button>
     </form>
 </Card>

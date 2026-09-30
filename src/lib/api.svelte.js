@@ -77,7 +77,20 @@ export async function makeHTTPRequest(
         }
     };
 
-    return await handleResponse(response);
+    let data = await handleResponse(response);
+
+    if(requestURL.includes("users")){
+        if(data.save){
+            user.save = data.save
+            delete data.save
+        }
+            
+        user.account = data
+
+        console.log($state.snapshot(user))
+    }
+
+    return data
 }
 
 export async function getNewRefresh(){
