@@ -4,8 +4,7 @@
     import "$lib/styles/form.css"
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
-    import { user } from "$lib/api.svelte";
-    import { makeHTTPRequest, getCurrentUser } from "$lib/api.svelte";
+    import { makeHTTPRequest, logOut } from "$lib/api.svelte";
 
     const REQUIRED_PHRASE = "delete my account"
 
@@ -21,7 +20,16 @@
     let phrase = $state()
 
     async function onclick(){
+        try{
+            const data = await makeHTTPRequest({
+                requestType: "DELETE",
+                requestURL: `users/${user.account.id}`
+            })
 
+            logOut()
+        }catch(error){
+            console.log(error.message)
+        }
     }
 </script>
 
