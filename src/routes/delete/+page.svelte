@@ -4,6 +4,7 @@
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
     import { makeHTTPRequest, logOut } from "$lib/api.svelte";
+    import { showToast } from "$lib/helpers";
 
     const REQUIRED_PHRASE = "delete my account"
 
@@ -27,7 +28,7 @@
 
             logOut()
         }catch(error){
-            console.log(error.message)
+            showToast(error.message)
         }
     }
 </script>

@@ -5,6 +5,7 @@
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
     import { getCurrentUser, makeHTTPRequest } from "$lib/api.svelte";
+    import { showToast } from "$lib/helpers";
 
     const loginInput = {
         iconName: "mail",
@@ -48,7 +49,7 @@
 
             goto("/details")
         }catch(error){
-            console.log(error.message)
+            showToast(error.message)
         }
 
     }

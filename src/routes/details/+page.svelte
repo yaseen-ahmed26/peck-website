@@ -5,6 +5,7 @@
     import Input from "$lib/templates/input.svelte";
     import { user } from "$lib/api.svelte";
     import { makeHTTPRequest, getCurrentUser } from "$lib/api.svelte";
+    import { showToast } from "$lib/helpers";
 
     const emailInput = {
         iconName: "mail",
@@ -57,7 +58,7 @@
                 requestURL: `users/${user.account.id}`
             })
         }catch (error){
-           console.log(error.message)
+            showToast(error.message)
         }
     }
 </script>

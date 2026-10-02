@@ -4,6 +4,7 @@
     import Card from "$lib/templates/card.svelte";
     import Input from "$lib/templates/input.svelte";
     import { makeHTTPRequest } from "$lib/api.svelte";
+    import { showToast } from "$lib/helpers";
 
     const codeInput = {
         iconName: "text-outline",
@@ -25,9 +26,9 @@
                 requestURL: "codes/verify"
             })
 
-            // showToast(`Successfully logged in on your ${data.os} in ${data.country}`);
+            showToast(`Connected your Peck account to ${data.game_id} on your ${data.os} in ${data.country}`);
         }catch (error){
-            console.log(error.message)
+            showToast(error.message)
         }
     }
 </script>
