@@ -2,8 +2,14 @@
 	import '$lib/styles/form.css';
 	import Navigation from '$lib/templates/navigation.svelte';
 	import favicon from '$lib/assets/favicon.svg';
+	import { automaticLogin } from '$lib/api.svelte';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+
+	onMount(() => {
+		automaticLogin();
+	});
 </script>
 
 <svelte:head>
