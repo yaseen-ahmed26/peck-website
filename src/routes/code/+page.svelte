@@ -35,7 +35,7 @@
 
 <Card title="Link Game" description="Enter the 7 character code displayed in game to link your account.">
     <form action="#">
-        <Input {...emailInput} bind:value={code}/>
+        <Input {...codeInput} bind:value={code}/>
         <button {onclick} class="login-btn" type="submit" disabled={!code} >Link</button>
     </form>
 </Card>
