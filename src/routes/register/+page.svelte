@@ -5,6 +5,7 @@
     import Input from "$lib/templates/input.svelte";
     import { user } from "$lib/api.svelte";
     import { makeHTTPRequest, getCurrentUser } from "$lib/api.svelte";
+    import { showToast } from "$lib/helpers";
 
     const emailInput = {
         iconName: "mail",
@@ -38,12 +39,17 @@
         required: true
     }
 
-    let email = $state();
-    let username = $state();
-    let password = $state();
-    let confirmPassword = $state()
+    let email = $state("");
+    let username = $state("");
+    let password = $state("");
+    let confirmPassword = $state("")
 
     async function onclick(){
+        if(email === ""){showToast("An email is required. (This does not need to be a valid email)"); return;}
+        if(username === ""){showToast("A username is required."); return;}
+        if(password === "" || confirmPassword === ""){showToast("Please enter a password"); return;}
+        if(password !== confirmPassword){showToast("Passwords do not match"); return;}
+
         try{
             const userData = {
                 email: email,
@@ -71,7 +77,7 @@
 
             await getCurrentUser();
         }catch(error){
-            console.log(`${error.message}`)
+            showToast(error.message)
         }
     }
 </script>
