@@ -10,3 +10,5 @@
 - We probbaly won't have a leaderboard page.
     - 2 reasons: wasn't happy with the last one, it was very basic. You only saw the top 5 users with a single stat.
     - The backend will be changing to have JSONB for saves, rather than individual stats for columns,making leaderboards much harder to do.
+- Cutting stats and share pages.
+    - This suffers from the same problem as leaderboards, it's not really worth the effort to implement just for 3 stats. I think the website should stay more account management rather than game management too. 
