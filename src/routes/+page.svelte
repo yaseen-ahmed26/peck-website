@@ -31,53 +31,17 @@
         <h2>Update Logs</h2>
         <div class="update-container">
             <details class="version-card">
-                <summary>Version 2.0</summary>
+                <summary>Version 3.0</summary>
 
                 <strong>Major Changes & Fixes</strong>
                 <ul>
-                    <li>(Game) Moved from a JSON file to native Godot Resources for upgrades</li>
-                    <li>(Game) Fixed a bug where tabbing out caused account linking to fail.</li>
-                    <li>(Game) Move from using Save IDs to access and refresh tokens for HTTP requests</li>
+                    <li>(Game) Added a second game to the platform called RPR.</li>
                     <br>
-                    <li>(Website) Replaced the home page with this one (previously it was the login page)</li>
+                    <li>(Server) Backend now supports multiple games and is no longer hardcoded to just 1.</li>
+                    <br>
+                    <li>(Website) Remade the entire website moving from vanilla JavaScript to SvelteKit.</li>
                 </ul>
                 
-                <strong>Website</strong>
-                <ul>
-                    <li>Replaced native alerts with Toastify notifications</li>
-                    <li>Replaced actions buttons on the login/register pages with hyperlinks</li>
-                    <li>Combined leaderboard and game stats pages</li>
-                </ul>
-
-                <strong>Game</strong>
-                <ul>
-                    <li>Added boosts</li>
-                    <li>Added an update log in the game. The game update log displays exclusively game changes. The website displays all changes made across the project.</li>
-                </ul>
-            </details>
-        </div>
-
-        <div class="update-container">
-            <details class="version-card">
-                <summary>Version 2.1</summary>
-
-                <strong>Major Changes & Fixes</strong>
-                <ul>
-                    <li>(Website) Added shareable game stats page.</li>
-                    <br>
-                    <li>(Server) Server side light anti cheat. It calculates the max theoretical amount of biscuits a person can earn to prevent cheating.</li>
-                </ul>
-                
-                <strong>Website</strong>
-                <ul>
-                    <li>Converted navigation bar options to dropdown menus</li>
-                </ul>
-
-                <strong>Game</strong>
-                <ul>
-                    <li>Moved from a dictionary to native Godot Resources for modals.</li>
-                    <li>Fixed a bug where the welcome bonus popup would akways show when connecting an account. Now only happens the first time an account is connected.</li>
-                </ul>
             </details>
         </div>
     </section>
