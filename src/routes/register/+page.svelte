@@ -6,6 +6,7 @@
     import { user } from "$lib/api.svelte";
     import { makeHTTPRequest, getCurrentUser } from "$lib/api.svelte";
     import { showToast } from "$lib/helpers";
+	import { goto } from "$app/navigation";
 
     const emailInput = {
         iconName: "mail",
@@ -76,6 +77,8 @@
             })
 
             await getCurrentUser();
+
+            goto("/details")
         }catch(error){
             showToast(error.message)
         }
