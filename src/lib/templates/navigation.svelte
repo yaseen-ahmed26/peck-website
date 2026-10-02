@@ -31,6 +31,7 @@
         </nav>
     {:else}
         <nav class="navigation">
+            <a href="/" class="navigation-link">Home</a>
             <a href="/register" class="navigation-link">Register</a>
             <a href="/login" class="navigation-link">Login</a>
         </nav>
