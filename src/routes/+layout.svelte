@@ -20,7 +20,7 @@
 </main>
 
 <footer>
-	<p>Copyright</p>
+	<p>© 2026 Project Hatchlings</p>
 </footer>
 
 <style>
