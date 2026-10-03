@@ -1,42 +1,34 @@
-# sv
+# Peck Website
+This is the website for the 'Peck' project.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a remake of the [original website](https://github.com/yaseen-ahmed26/biscuit-website) for the Biscuit (now renamed to Peck) platform that was made with vanilla JavaScript/HTML/CSS. This new website is aesthetically the same but is made with SvelteKit instead.
 
-## Creating a project
+> **Live Demo:** []()
+>
+> Note a real email is not required, as long as the email has an `@` symbol, anything can be used.
+> The server is hosted with Render's free tier, so initial requests (such as login/registering) may take a minute to occur.
 
-If you're seeing this, you've probably already done this step. Congrats!
+The old project got difficult to maintain due to lots of repeated logic (e.g. HTML structures) and separated logic (.js, .html).
 
-```sh
-# create a new project
-npx sv create my-app
-```
+### Repositories
+These are some supporting repos.
 
-To recreate this project with the same configuration:
+[Biscuit Game](https://github.com/yaseen-ahmed26/biscuit-game.git) | [Server](https://github.com/yaseen-ahmed26/biscuit-server.git)
 
-```sh
-# recreate this project
-npx sv@0.17.1 create --template minimal --types jsdoc --add prettier sveltekit-adapter="adapter:static" --install npm hatchling-website
-```
+### Tech
+- **Framework**: SvelteKit
 
-## Developing
+- **Language**: JavaScript
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **Styling**: CSS
 
-```sh
-npm run dev
+### About
+The website includes:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- **Account Registration**
 
-## Building
+- **Account Deletion**
 
-To create a production version of your app:
+- **Account Management (updating emails/usernames/passwords)**
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- **Link Game to Account**
