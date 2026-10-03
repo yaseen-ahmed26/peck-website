@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { dev } from "$app/environment";
+import { goto } from "$app/navigation";
 
 const baseURL = dev ? "/api" : "https://biscuit-server.onrender.com/api"
 
@@ -147,5 +148,7 @@ export async function logOut(){
     if(response.ok){
         user.account = {}
         user.save = {}
+
+        goto("/")
     }
 }

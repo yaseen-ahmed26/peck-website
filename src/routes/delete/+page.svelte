@@ -5,6 +5,7 @@
     import Input from "$lib/templates/input.svelte";
     import { makeHTTPRequest, logOut } from "$lib/api.svelte";
     import { showToast } from "$lib/helpers";
+    import { user } from "$lib/api.svelte";
 
     const REQUIRED_PHRASE = "delete my account"
 
