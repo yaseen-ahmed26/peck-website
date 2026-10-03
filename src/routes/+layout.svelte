@@ -1,12 +1,26 @@
 <script>
+// @ts-nocheck
+
 	import '$lib/styles/form.css';
 	import Navigation from '$lib/templates/navigation.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import { automaticLogin } from '$lib/api.svelte';
 	import { onMount } from 'svelte';
 	import 'toastify-js/src/toastify.css';
+	import { page } from '$app/state';
 
 	let { children } = $props();
+
+	const titles = {
+    	"/": "Home - Peck",
+        "/login": "Login - Peck",
+        "/register": "Register - Peck",
+        "/details": "Account Details - Peck",
+        "/code": "Link Game - Peck",
+        "/details": "Delete Account - Peck"
+    };
+
+    let pageTitle = $derived(titles[page.url.pathname]);
 
 	onMount(() => {
 		automaticLogin();
@@ -15,6 +29,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>{pageTitle}</title>
 </svelte:head>
 
 <Navigation/>
