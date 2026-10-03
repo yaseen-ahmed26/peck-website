@@ -17,7 +17,7 @@
         required: true
     }
 
-    let phrase = $state()
+    let phrase = $state("")
 
     async function onclick(e){
         e.preventDefault();
