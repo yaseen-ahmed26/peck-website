@@ -1,11 +1,22 @@
 <script>
     let {value = $bindable(), ...details} = $props()
+
+    let focused = $state(false);
+    let floatLabel = $derived(focused || Boolean(value))
 </script>
 
 <div class="input-box">
     <span class="icon"><ion-icon name={details.iconName}></ion-icon></span>
-    <label for={details.inputID}>{details.labelText}</label>
-    <input id={details.inputID} type={details.inputType} placeholder={details?.placeholderText} required={details.required} bind:value={value}>
+    <label for={details.inputID} class:floating={floatLabel}>{details.labelText}</label>
+    <input 
+        id={details.inputID} 
+        type={details.inputType} 
+        placeholder={details?.placeholderText} 
+        required={details.required} 
+        bind:value={value}
+        onfocus={() => focused = true}
+        onblur={() => focused = false}
+    >
 </div>
 
 <style>
@@ -26,8 +37,7 @@
         transition: 0.5s ease;
     }
 
-    .input-box:has(input:focus) label,
-    .input-box:has(input:valid) label {
+    .input-box label.floating{
         top: -5px;
     }
 
