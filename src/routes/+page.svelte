@@ -29,6 +29,17 @@
     </section>
 
     <section>
+        <div class="text-card">
+            <div class="text-container">
+                <h2>How to link</h2>
+                <p>Peck featues cloud saves and cross progression for our games. Simply create an account on the website and download one of the games from Itch.io. In game, you'll see a "Connect Peck Account" button on the main menu. 
+                    Once clicked, it will generate a 7 digit code. On the website, navigate to Game > Link and enter the code and your data will be saved.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section>
         <h2>Update Logs</h2>
         <div class="update-container">
             <details class="version-card">
