@@ -4,9 +4,10 @@
     <section>
         <div class="text-card">
             <div class="text-container">
-                <h2>Hello there</h2>
-                <p>Get a quick overview, read update logs here and sign up for an account! Download the game using the link below and connect your game data.</p>
+                <h2>Hello there.</h2>
+                <p>Get a quick overview, read update logs here and sign up for an account! Download any Peck games from Itch.io using the button below.</p>
                 <p>If you do sign up for an account, note that a real email is <b>NOT</b> required. As long as it has an @ symbol, anything is valid.</p>
+                <p><b>The server is being hosted on Render's free tier so there may be some delay in logging in/creating an account.</b></p>
             </div>
         </div>
     </section>
@@ -18,7 +19,7 @@
     
             <div class="text-container">
                 <h2>Welcome to Peck!</h2>
-                <p>This is a hobby project that I'm working on purely for fun. All the code is available on GitHub and the game is downloadable on Itch.io. Thank you for visiting, I hope you enjoy looking around!</p>
+                <p>This is a hobby project that I'm working on purely for fun. All the code is available on GitHub and games are downloadable from Itch.io. Thank you for visiting, I hope you enjoy looking around!</p>
                 <div class="btn-group">
                     <a href="https://corporalchicken.itch.io/biscuit" class="itch-btn">Itch.io</a>
                     <a href="https://github.com/yaseen-ahmed26" class="github-btn">GitHub</a>
