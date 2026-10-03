@@ -4,6 +4,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import { automaticLogin } from '$lib/api.svelte';
 	import { onMount } from 'svelte';
+	import 'toastify-js/src/toastify.css';
 
 	let { children } = $props();
 
@@ -14,9 +15,6 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </svelte:head>
 
 <Navigation/>
