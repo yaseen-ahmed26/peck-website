@@ -19,22 +19,24 @@
 <header>
     <a href="/" class="logo">Peck</a>
 
-    {#if user.account?.id}
-        <nav class="navigation">
-            <a href="/" class="navigation-link">Home</a>
+    {#if !user.loading}
+        {#if user.account?.id}
+            <nav class="navigation">
+                <a href="/" class="navigation-link">Home</a>
 
-            {#each navMenus as menu}
-                <Dropdown title={menu.title} items={menu.items} />
-            {/each}
+                {#each navMenus as menu}
+                    <Dropdown title={menu.title} items={menu.items} />
+                {/each}
 
-            <button class="logout-btn" onclick={handleLogout}>Log out</button>
-        </nav>
-    {:else}
-        <nav class="navigation">
-            <a href="/" class="navigation-link">Home</a>
-            <a href="/register" class="navigation-link">Register</a>
-            <a href="/login" class="navigation-link">Login</a>
-        </nav>
+                <button class="logout-btn" onclick={handleLogout}>Log out</button>
+            </nav>
+        {:else}
+            <nav class="navigation">
+                <a href="/" class="navigation-link">Home</a>
+                <a href="/register" class="navigation-link">Register</a>
+                <a href="/login" class="navigation-link">Login</a>
+            </nav>
+        {/if}
     {/if}
 </header>
 

@@ -8,7 +8,8 @@ console.log(`API base URL is ${baseURL}`)
 
 export const user = $state({
     account: {},
-    save: {}
+    save: {},
+    loading: true
 })
 
 async function handleResponse(response){
@@ -135,8 +136,12 @@ export async function getCurrentUser(){
 }
 
 export async function automaticLogin(){
-    const success = await getNewRefresh()
-    if(success) getCurrentUser()
+    try{
+        const success = await getNewRefresh()
+        if(success){getCurrentUser()}
+    }finally{
+        user.loading = false;
+    }
 }
 
 export async function logOut(){
@@ -148,6 +153,7 @@ export async function logOut(){
     if(response.ok){
         user.account = {}
         user.save = {}
+        user.loading = false;
 
         goto("/")
     }
