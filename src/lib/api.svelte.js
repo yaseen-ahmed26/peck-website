@@ -134,7 +134,7 @@ export async function getCurrentUser(){
 }
 
 export async function automaticLogin(){
-    const success = getNewRefresh()
+    const success = await getNewRefresh()
     if(success) getCurrentUser()
 }
 
