@@ -45,7 +45,9 @@
     let password = $state("");
     let confirmPassword = $state("")
 
-    async function onclick(){
+    async function onclick(e){
+        e.preventDefault();
+
         if(email === ""){showToast("An email is required. (This does not need to be a valid email)"); return;}
         if(username === ""){showToast("A username is required."); return;}
         if(password === "" || confirmPassword === ""){showToast("Please enter a password"); return;}

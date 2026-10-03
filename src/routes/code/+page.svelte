@@ -17,7 +17,9 @@
 
     let code = $state("")
 
-    async function onclick(){
+    async function onclick(e){
+        e.preventDefault();
+
         try{
             const data = await makeHTTPRequest({
                 requestType: "POST",

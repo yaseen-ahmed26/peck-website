@@ -42,7 +42,9 @@
     let newPassword = $state("");
     let currentPassword = $state("")
 
-    async function onclick(){
+    async function onclick(e){
+        e.preventDefault();
+
         const updateData = {
             username: newUsername || null,
             email: newEmail || null,
