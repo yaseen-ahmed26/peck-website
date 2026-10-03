@@ -32,7 +32,6 @@
 <style>
 	:global(*){
 		color: white;
-		font-family: "Comic Sans MS";
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;

@@ -15,7 +15,7 @@
     <section>
         <div class="text-card">
             <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img src="src/lib/images/landing_image.png" alt="Image of the Biscuit Game">
+            <img src="/landing_image.png" alt="Image of the Biscuit Game">
     
             <div class="text-container">
                 <h2>Welcome to Peck!</h2>
