@@ -23,7 +23,7 @@
     let pageTitle = $derived(titles[page.url.pathname]);
 
 	onMount(() => {
-		automaticLogin();
+		// automaticLogin();
 	});
 </script>
 
@@ -44,11 +44,13 @@
 
 <style>
 	:global(*){
-		color: white;
+		color: #f4f4f5;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
+
 	:global(body){
 		display: flex;
 		flex-direction: column;
@@ -66,11 +68,13 @@
 
 	footer{
 		text-align: center;
-		font-size: 1.1rem;
-		padding: 32px;
+		padding: 28px 16px;
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
 	}
 
 	footer p{
-		color: rgba(255, 255, 255, 0.369);
+		font-size: 0.85rem;
+		color: #52525b;
+		letter-spacing: 0.02em;
 	}
 </style>

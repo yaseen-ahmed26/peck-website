@@ -34,7 +34,7 @@
             <nav class="navigation">
                 <a href="/" class="navigation-link">Home</a>
                 <a href="/register" class="navigation-link">Register</a>
-                <a href="/login" class="navigation-link">Login</a>
+                <a href="/login" class="login-btn">Login</a>
             </nav>
         {/if}
     {/if}
@@ -46,55 +46,80 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 38px 150px;
+        padding: 16px clamp(20px, 8vw, 80px);
         display: flex;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
+        background: rgba(9, 9, 11, 0.8);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         z-index: 99;
     }
 
-    .logo{
-        font-size: 2rem;
-        font-weight: bold;
+    .logo {
+        font-size: 1.9rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
         text-decoration: none;
+        color: #f4f4f5;
     }
 
-    .navigation{
+    .navigation {
         display: flex;
         align-items: center;
         gap: 20px;
     }
 
-    .navigation-link{
-        font-size: 1.1rem;
+    .navigation-link {
+        font-size: 0.95rem;
         font-weight: 500;
         text-decoration: none;
-        transition: 0.4s ease;
-        color: white;
-    }
-
-    .navigation-link:hover{
-        color: lime;
-    }
-
-    .logout-btn{
-        width: 130px;
-        height: 50px;
-        background: transparent;
-        border: 2px solid #ffffff;
-        outline: none;
+        color: #a1a1aa;
+        padding: 6px 10px;
         border-radius: 6px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        color: #ffffff;
-        font-weight: 500;
-        margin-left: 40px;
-        transition: 0.2s ease;
+        transition: color 0.18s ease;
     }
 
-    .logout-btn:hover{
-        background: white;
-        color: black;
+    .navigation-link:hover {
+        color: #f4f4f5;
+    }
+
+    .login-btn {
+        font-size: 0.92rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #f59e0b;
+        background: rgba(245, 158, 11, 0.1);
+        border: 1px solid rgba(245, 158, 11, 0.28);
+        padding: 8px 18px;
+        border-radius: 8px;
+        transition: all 0.18s ease;
+    }
+
+    .login-btn:hover {
+        background: #f59e0b;
+        color: #09090b;
+        border-color: #f59e0b;
+        transform: translateY(-1px);
+    }
+
+    .logout-btn {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        outline: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: #d4d4d8;
+        padding: 8px 18px;
+        transition: all 0.18s ease;
+    }
+
+    .logout-btn:hover {
+        background: rgba(239, 68, 68, 0.1);
+        border-color: rgba(239, 68, 68, 0.3);
+        color: #fca5a5;
     }
 </style>
