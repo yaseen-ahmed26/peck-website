@@ -59,7 +59,7 @@
     <form action="#">
         <Input {...loginInput} bind:value={email}/>
         <Input {...passwordInput} bind:value={password}/>
-        <button {onclick} class="login-btn" type="submit" disabled={disableBtn} >Log in</button>
+        <button {onclick} class="action-btn" type="submit" disabled={disableBtn} >Log in</button>
         <p>Don't have an account? <a class="link" href="/register">Sign up here.</a></p>
     </form>
 </Card>

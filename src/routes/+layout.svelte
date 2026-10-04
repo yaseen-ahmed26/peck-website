@@ -23,7 +23,7 @@
     let pageTitle = $derived(titles[page.url.pathname]);
 
 	onMount(() => {
-		// automaticLogin();
+		automaticLogin();
 	});
 </script>
 

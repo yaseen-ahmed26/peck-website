@@ -39,6 +39,6 @@
 <Card title="Delete Account" description={`Enter the phrase '${REQUIRED_PHRASE}' to delete your account. This also deletes any game save data.`}>
     <form action="#">
         <Input {...deleteInput} bind:value={phrase}/>
-        <button {onclick} class="login-btn" type="submit" disabled={phrase !== REQUIRED_PHRASE} >Delete Account</button>
+        <button {onclick} class="action-btn" type="submit" disabled={phrase !== REQUIRED_PHRASE} >Delete Account</button>
     </form>
 </Card>

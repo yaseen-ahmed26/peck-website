@@ -71,6 +71,6 @@
         <Input {...usernameInput} labelText={user.account.username} bind:value={newUsername}/>
         <Input {...passwordInput} bind:value={newPassword}/>
         <Input {...confirmPasswordInput} bind:value={currentPassword}/>
-        <button {onclick} class="login-btn" type="submit" disabled={!currentPassword} >Update</button>
+        <button {onclick} class="action-btn" type="submit" disabled={!currentPassword} >Update</button>
     </form>
 </Card>

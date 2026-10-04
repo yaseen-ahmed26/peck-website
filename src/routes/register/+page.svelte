@@ -93,7 +93,7 @@
         <Input {...usernameInput} bind:value={username}/>
         <Input {...passwordInput} bind:value={password}/>
         <Input {...confirmPasswordInput} bind:value={confirmPassword}/>
-        <button {onclick} class="login-btn" type="submit" >Register</button>
+        <button {onclick} class="action-btn" type="submit" >Register</button>
         <p>Already have an account? <a class="link" href="/login">Log in here.</a></p>
     </form>
 </Card>
