@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<!-- <link rel="icon" href={favicon} /> -->
 	<title>{pageTitle}</title>
 </svelte:head>
 
