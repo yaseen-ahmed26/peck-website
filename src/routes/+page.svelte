@@ -6,20 +6,20 @@
 	<section class="hero-grid">
 		<div class="hero-copy">
 			<span class="badge">Peck • v3.0</span>
-			<h1>Play, link accounts, and sync progress.</h1>
+			<h1>Welcome to Peck</h1>
 			<p class="lead">
-				A hobby platform connecting indie desktop games with real-time web sync. Download the builds, track your stats across sessions, and manage your account.
+				A hobby project with games that have cloud saves and cross progression. Try out one of the games on our Itch.io and save your data.
 			</p>
 
 			<div class="notice-callout">
 				<span class="notice-icon">i</span>
 				<p>
-					Testing account linking? A real email is <strong>not required</strong>. Any mock address (e.g. <code>test@test.com</code>) will work.
+					A real email is <strong>not required</strong> for accounts. Any email address (e.g. <code>test@test.com</code>) will work so long as it has an @..
 				</p>
 			</div>
 
 			<div class="btn-group">
-				<a href="https://corporalchicken.itch.io/biscuit" target="_blank" rel="noreferrer" class="btn btn-primary">
+				<a href="https://corporalchicken.itch.io" target="_blank" rel="noreferrer" class="btn btn-primary">
 					Download on Itch.io
 				</a>
 				<a href="https://github.com/yaseen-ahmed26" target="_blank" rel="noreferrer" class="btn btn-secondary">
@@ -32,8 +32,8 @@
 			<div class="preview-card">
 				<img src={landingImage} alt="Preview of Biscuit Game" class="preview-img" />
 				<div class="preview-overlay">
-					<span class="game-tag">Biscuit & RPR</span>
-					<span class="game-status">Playable on PC</span>
+					<span class="game-tag">Biscuit</span>
+					<span class="game-status"></span>
 				</div>
 			</div>
 		</div>
@@ -42,11 +42,11 @@
 	<section class="updates-section">
 		<div class="section-header">
 			<h2>Changelog</h2>
-			<p>Recent milestones across the game clients, server architecture, and web portal.</p>
+			<p>Recent updates to our games, server and website.</p>
 		</div>
 
 		<div class="changelog-list">
-			<details class="version-entry" open>
+			<details class="version-entry">
 				<summary class="version-summary">
 					<div class="version-meta">
 						<span class="version-number">Version 3.0</span>
@@ -63,12 +63,12 @@
 
 					<div class="log-group">
 						<span class="tag tag-server">Server</span>
-						<p>Refactored the FastAPI backend to support dynamic, multi-game save data rather than a hardcoded single title schema.</p>
+						<p>Refactored the server to support multiple game saves rather than just 1..</p>
 					</div>
 
 					<div class="log-group">
 						<span class="tag tag-web">Website</span>
-						<p>Rebuilt the frontend architecture, migrating from multi-page vanilla JavaScript to a reactive SvelteKit client.</p>
+						<p>Remade the website using SvelteKit, also redesigned it completely..</p>
 					</div>
 				</div>
 			</details>
