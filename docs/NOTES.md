@@ -15,3 +15,7 @@
 - The backend no longer returns a save with the user, but there is a guardrail check so we can leave it for now.
     - Would need a separate GET saves/me/all or saves/me/{game_id} which would be stored in the user object.
     - We probably don't even need the save at all, since this website will now just be account management.
+- Some files were missing and some needed changing:
+    - svelte.config.js: Core config file for SvelteKit, specifies how the project is bundled
+    - vite.config.js: This does not accept an adapter property, SvelteKit looks for it in it's own config file, because Vite is the default, it run with that instead.
+    - +layout.js: Runs on all pages, disables SSR because this is a static website
