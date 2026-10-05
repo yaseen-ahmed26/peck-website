@@ -14,7 +14,7 @@
 			<div class="notice-callout">
 				<span class="notice-icon">i</span>
 				<p>
-					A real email is <strong>not required</strong> for accounts. Any email address (e.g. <code>test@test.com</code>) will work so long as it has an @..
+					A real email is <strong>not required</strong> for accounts. Any email address (e.g. <code>test@test.com</code>) will work so long as it has an @.
 				</p>
 			</div>
 
@@ -63,12 +63,12 @@
 
 					<div class="log-group">
 						<span class="tag tag-server">Server</span>
-						<p>Refactored the server to support multiple game saves rather than just 1..</p>
+						<p>Refactored the server to support multiple game saves rather than just 1.</p>
 					</div>
 
 					<div class="log-group">
 						<span class="tag tag-web">Website</span>
-						<p>Remade the website using SvelteKit, also redesigned it completely..</p>
+						<p>Remade the website using SvelteKit and also redesigned it completely.</p>
 					</div>
 				</div>
 			</details>
