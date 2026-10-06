@@ -19,11 +19,12 @@
 			</div>
 
 			<div class="btn-group">
+				
 				<a href="https://corporalchicken.itch.io" target="_blank" rel="noreferrer" class="btn btn-primary">
-					Download on Itch.io
+					Itch.io
 				</a>
 				<a href="https://github.com/yaseen-ahmed26" target="_blank" rel="noreferrer" class="btn btn-secondary">
-					Source on GitHub
+					GitHub
 				</a>
 			</div>
 		</div>
@@ -41,8 +42,8 @@
 
 	<section class="updates-section">
 		<div class="section-header">
-			<h2>Changelog</h2>
-			<p>Recent updates to our games, server and website.</p>
+			<h2>Platform Updates</h2>
+			<p>Recent updates to the platform.</p>
 		</div>
 
 		<div class="changelog-list">
@@ -69,6 +70,11 @@
 					<div class="log-group">
 						<span class="tag tag-web">Website</span>
 						<p>Remade the website using SvelteKit and also redesigned it completely.</p>
+					</div>
+
+					<div class="log-group">
+						<span class="tag tag-web">Website</span>
+						<p>Added blog style pages for all games.</p>
 					</div>
 				</div>
 			</details>
