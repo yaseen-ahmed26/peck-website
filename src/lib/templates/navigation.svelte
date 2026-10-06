@@ -5,9 +5,12 @@
     import { goto } from "$app/navigation";
     import Dropdown from "./dropdown.svelte";
 
-    const navMenus = [
-        {title: "Game", items: [{label: "Link", href: "/code"}]},
+    const loggedInNav = [
+        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}]},
         {title: "Account", items: [{label: "Details", href: "/details"}, {label: "Delete", href: "/delete"}]}
+    ];
+    const loggedOutNav = [
+        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}]},
     ];
 
     async function handleLogout() {
@@ -23,8 +26,9 @@
         {#if user.account?.id}
             <nav class="navigation">
                 <a href="/" class="navigation-link">Home</a>
+                <a href="/code" class="navigation-link">Link</a>
 
-                {#each navMenus as menu}
+                {#each loggedInNav as menu}
                     <Dropdown title={menu.title} items={menu.items} />
                 {/each}
 
@@ -33,6 +37,9 @@
         {:else}
             <nav class="navigation">
                 <a href="/" class="navigation-link">Home</a>
+                {#each loggedOutNav as menu}
+                    <Dropdown title={menu.title} items={menu.items} />
+                {/each}
                 <a href="/register" class="navigation-link">Register</a>
                 <a href="/login" class="login-btn">Login</a>
             </nav>
