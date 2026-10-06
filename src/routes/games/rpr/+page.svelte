@@ -27,12 +27,24 @@
             <h3>New Content & Cut Content</h3>
             <p>Both games have roughly the same amount of modifiers. The difference between them is that the old was much more gimmicky and/or troll-like. Manipulating the UI, punishing you for winning etc. The new cut all that and attempted to add some that required some thinking.
                 There are several new features in the remake, including preset challenges, different opponent types, customisable gamemodes and saving. These are all things I wanted to do in the old but couldn't because of how tangled and messy the code was.</p>
+			
+			<p>View the old project's source code <a href="https://github.com/corporal1chicken/rock-paper-scissors-plus">here</a>.</p>
 		`,
 		notice: "",
 		itchLink: "https://corporalchicken.itch.io/rpr",
 		githubLink: "https://github.com/yaseen-ahmed26/rock-paper-revamp",
 		media: [{type: "image", src: RPR1, caption: "Selection Screen"}, {type: "image", src: RPR2, caption: "Results"}],
-		changelog: []
+		changelog: [
+			{
+				version: "v1.0 (Release)",
+				changes: [
+					{tag: "Feature", tagClass: "tag-feature", text: "26 Modifiers, 5 Gamemodes"},
+					{tag: "Feature", tagClass: "tag-feature", text: "Challenges, preset modifiers, a gamemode and opponent."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Tasks, gamemode specific short tasks to do during matches"},
+					{tag: "Feature", tagClass: "tag-feature", text: "Opponent types, different AI personalities"},
+				]
+			}
+		]
 	};
 </script>
 
