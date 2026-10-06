@@ -6,11 +6,11 @@
     import Dropdown from "./dropdown.svelte";
 
     const loggedInNav = [
-        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}]},
+        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}, {label: "RPR", href: "/games/rpr"}]},
         {title: "Account", items: [{label: "Details", href: "/details"}, {label: "Delete", href: "/delete"}]}
     ];
     const loggedOutNav = [
-        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}]},
+        {title: "Games", items: [{label: "Biscuit", href: "/games/biscuit"}, {label: "RPR", href: "/games/rpr"}]},
     ];
 
     async function handleLogout() {
