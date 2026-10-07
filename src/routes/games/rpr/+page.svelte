@@ -1,12 +1,13 @@
 <script>
 	import GamePage from '$lib/templates/game-page.svelte';
 	import RPR1 from '$lib/images/rpr_1.png'
-    import RPR2 from '$lib/images/rpr_2.png'
+	import RPR2 from '$lib/images/rpr_2.mp4'
+	import RPR3 from '$lib/images/rpr_3.mp4'
 
 	const gameData = {
 		name: "Rock Paper Revamped",
-		version: "1.0",
-		date: "October 5th, 2026",
+		version: "2.0",
+		date: "October 7th, 2026",
 		description: `			
 			<h3>Premise, Why Revamped?</h3>
 			<p>This is a remake of an old project I had. That game was terribly made, it had 400 line hardcoded match statements, everything lived in 1 file and it was a nightmare to add new features. So the goal of this remake was
@@ -29,14 +30,24 @@
                 There are several new features in the remake, including preset challenges, different opponent types, customisable gamemodes and saving. These are all things I wanted to do in the old but couldn't because of how tangled and messy the code was.</p>
 			
 			<p>View the old project's source code <a href="https://github.com/corporal1chicken/rock-paper-scissors-plus">here</a>.</p>
+
+			<h3>7/10/26: Economy</h3>
+			<p>So this something I wanted to do in the old game but couldn't due to how badly made it was. That is why the old game and the new one prior to v2 had a lot of modifiers. It was actually quite simple to make,
+				the hardest bit was probably deciding how much each modifier should cost. I had some fun with it deciding which should be behind a challenge, which should be purchaseable and
+				which should be already unlocked. As for the new modifiers, Thought Tax and Random Reset are reworked ones from the old game. Modifiers for this game had the philosophy of having a downside but a clear benefit.
+				This game was super fun to make and very satisfying too. Especially because the 4 new modifiers required zero code. They were all plug and play which was my goal for this remake.</p>
 		`,
 		notice: "",
 		itchLink: "https://corporalchicken.itch.io/rpr",
 		githubLink: "https://github.com/yaseen-ahmed26/rock-paper-revamp",
-		media: [{type: "image", src: RPR1, caption: "Selection Screen"}, {type: "image", src: RPR2, caption: "Results"}],
+		media: [
+			{type: "image", src: RPR1, caption: "Selection Screen"}, 
+			{type: "video", src: RPR3, caption: "The Flow"},
+			{type: "video", src: RPR2, caption: "Results"}
+		],
 		changelog: [
 			{
-				version: "v2.0 (Economy) - 6/10/26",
+				version: "v2.0 (Economy) - 7/10/26",
 				changes: [
 					{tag: "Feature", tagClass: "tag-feature", text: "4 Modifiers: Thought Tax, Shattered Stalemate, Random Reset, Desperation Deal."},
 					{tag: "Feature", tagClass: "tag-feature", text: "Challenges now unlock Modifiers when completed."},
