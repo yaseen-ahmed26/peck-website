@@ -36,14 +36,33 @@
 		media: [{type: "image", src: RPR1, caption: "Selection Screen"}, {type: "image", src: RPR2, caption: "Results"}],
 		changelog: [
 			{
-				version: "v1.0 (Release)",
+				version: "v2.0 (Economy) - 6/10/26",
+				changes: [
+					{tag: "Feature", tagClass: "tag-feature", text: "4 Modifiers: Thought Tax, Shattered Stalemate, Random Reset, Desperation Deal."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Challenges now unlock Modifiers when completed."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Tokens, Modifiers now cost Tokens earned from matches."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Race to Zero gamemode, first to 0 wins."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Sequencer opponent, a new opponent that plays set moves until you disrupt him."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Splash screen and icon waterfall on main menu."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Modifier, move and menu icons."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Update log and Revamp info screens."},
+					{tag: "Change", tagClass: "tag-change", text: "Tasks now award Tokens."},
+					{tag: "Change", tagClass: "tag-change", text: "Redesigned RPS selection screen slightly."},
+					{tag: "Balance", tagClass: "tag-balance", text: "Changed Calculated Risk challenge gamemode from Survival to Best of 5"},
+					{tag: "Balance", tagClass: "tag-balance", text: "Changed Inverted Death challenge gamemode from Survival to Comeback"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Prevent the game from crashing when no move is selected."},
+					{tag: "Removal", tagClass: "tag-removal", text: "Removed pick random modifier button."}
+				]
+			},
+			{
+				version: "v1.0 (Release) - 27/9/26",
 				changes: [
 					{tag: "Feature", tagClass: "tag-feature", text: "26 Modifiers, 5 Gamemodes"},
-					{tag: "Feature", tagClass: "tag-feature", text: "Challenges, preset modifiers, a gamemode and opponent."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Challenges, preset modifiers, a gamemode and opponent. Currently 4."},
 					{tag: "Feature", tagClass: "tag-feature", text: "Tasks, gamemode specific short tasks to do during matches"},
-					{tag: "Feature", tagClass: "tag-feature", text: "Opponent types, different AI personalities"},
+					{tag: "Feature", tagClass: "tag-feature", text: "Opponent types, different AI personalities. Currently 2."},
 				]
-			}
+			},
 		]
 	};
 </script>
