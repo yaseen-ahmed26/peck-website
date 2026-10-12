@@ -58,7 +58,7 @@
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        background: rgba(9, 9, 11, 0.8);
+        background: rgba(2, 6, 23, 0.8);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         z-index: 99;
@@ -69,7 +69,7 @@
         font-weight: 800;
         letter-spacing: -0.03em;
         text-decoration: none;
-        color: #f4f4f5;
+        color: #f8fafc;
     }
 
     .navigation {
@@ -82,32 +82,32 @@
         font-size: 0.95rem;
         font-weight: 500;
         text-decoration: none;
-        color: #a1a1aa;
+        color: #cbd5e1;
         padding: 6px 10px;
         border-radius: 6px;
         transition: color 0.18s ease;
     }
 
     .navigation-link:hover {
-        color: #f4f4f5;
+        color: #00ffff;
     }
 
     .login-btn {
         font-size: 0.92rem;
         font-weight: 600;
         text-decoration: none;
-        color: #f59e0b;
-        background: rgba(245, 158, 11, 0.1);
-        border: 1px solid rgba(245, 158, 11, 0.28);
+        color: #06b6d4;
+        background: rgba(6, 182, 212, 0.1);
+        border: 1px solid rgba(6, 182, 212, 0.3);
         padding: 8px 18px;
         border-radius: 8px;
         transition: all 0.18s ease;
     }
 
     .login-btn:hover {
-        background: #f59e0b;
-        color: #09090b;
-        border-color: #f59e0b;
+        background: #06b6d4;
+        color: #0f172a;
+        border-color: #06b6d4;
         transform: translateY(-1px);
     }
 
@@ -119,14 +119,14 @@
         cursor: pointer;
         font-size: 0.92rem;
         font-weight: 600;
-        color: #d4d4d8;
+        color: #cbd5e1;
         padding: 8px 18px;
         transition: all 0.18s ease;
     }
 
     .logout-btn:hover {
-        background: rgba(239, 68, 68, 0.1);
-        border-color: rgba(239, 68, 68, 0.3);
-        color: #fca5a5;
+        background: rgba(148, 163, 184, 0.1);
+        border-color: rgba(148, 163, 184, 0.3);
+        color: #e2e8f0;
     }
 </style>

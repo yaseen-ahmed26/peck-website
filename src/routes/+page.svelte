@@ -97,7 +97,7 @@
 		grid-template-columns: 1.35fr 0.8fr;
 		gap: 2.5rem;
 		align-items: center;
-		background: #111115;
+		background: #0f172a;
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		border-radius: 20px;
 		padding: 3rem;
@@ -116,9 +116,9 @@
 		font-weight: 700;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		color: #60a5fa;
-		background: rgba(59, 130, 246, 0.12);
-		border: 1px solid rgba(59, 130, 246, 0.25);
+		color: #7dd3fc;
+		background: rgba(125, 211, 252, 0.12);
+		border: 1px solid rgba(125, 211, 252, 0.25);
 		padding: 4px 10px;
 		border-radius: 6px;
 	}
@@ -128,14 +128,14 @@
         line-height: 1.25;
         font-weight: 700;
         letter-spacing: -0.02em;
-        color: #f4f4f5;
+        color: #f8fafc;
         white-space: nowrap;
     }
 
 	.lead {
 		font-size: 1.05rem;
 		line-height: 1.6;
-		color: #a1a1aa;
+		color: #cbd5e1;
 	}
 
 	.notice-callout {
@@ -148,7 +148,7 @@
         padding: 12px 16px;
         font-size: 0.9rem;
         line-height: 1.5;
-        color: #d4d4d8;
+        color: #e2e8f0;
     }
 
     .notice-icon {
@@ -158,9 +158,9 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: rgba(56, 189, 248, 0.15);
-        border: 1px solid rgba(56, 189, 248, 0.3);
-        color: #38bdf8;
+        background: rgba(0, 255, 255, 0.15);
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        color: #00ffff;
         font-size: 0.75rem;
         font-weight: 700;
         font-family: monospace;
@@ -193,19 +193,19 @@
 	}
 
 	.btn-primary {
-		background: #f59e0b;
-		color: #09090b;
+		background: #06b6d4;
+		color: #0f172a;
 	}
 
 	.btn-primary:hover {
-		background: #d97706;
+		background: #0891b2;
 		transform: translateY(-1px);
 	}
 
 	.btn-secondary {
 		background: rgba(255, 255, 255, 0.04);
 		border: 1px solid rgba(255, 255, 255, 0.12);
-		color: #f4f4f5;
+		color: #f8fafc;
 	}
 
 	.btn-secondary:hover {
@@ -244,7 +244,7 @@
 		left: 0;
 		right: 0;
 		padding: 12px 14px;
-		background: linear-gradient(180deg, transparent 0%, rgba(9, 9, 11, 0.9) 100%);
+		background: linear-gradient(180deg, transparent 0%, rgba(2, 6, 23, 0.9) 100%);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -253,15 +253,15 @@
 
 	.game-tag {
 		font-weight: 700;
-		color: #f4f4f5;
+		color: #f8fafc;
 	}
 
 	.game-status {
-		color: #a1a1aa;
+		color: #cbd5e1;
 	}
 
 	.updates-section {
-		background: #111115;
+		background: #0f172a;
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		border-radius: 20px;
 		padding: 2.5rem 3rem;
@@ -275,12 +275,12 @@
 		font-size: 1.5rem;
 		font-weight: 700;
 		letter-spacing: -0.01em;
-		color: #f4f4f5;
+		color: #f8fafc;
 		margin-bottom: 0.35rem;
 	}
 
 	.section-header p {
-		color: #71717a;
+		color: #94a3b8;
 		font-size: 0.95rem;
 	}
 
@@ -320,7 +320,7 @@
 	.version-number {
 		font-size: 1rem;
 		font-weight: 700;
-		color: #f4f4f5;
+		color: #f8fafc;
 	}
 
 	.version-badge {
@@ -329,15 +329,15 @@
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
 		color: #10b981;
-		background: rgba(16, 185, 129, 0.12);
-		border: 1px solid rgba(16, 185, 129, 0.3);
+		background: rgba(45, 212, 191, 0.12);
+		border: 1px solid rgba(45, 212, 191, 0.3);
 		padding: 2px 7px;
 		border-radius: 4px;
 	}
 
 	.toggle-icon {
         font-size: 0.75rem;
-        color: #71717a;
+        color: #94a3b8;
         transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -360,7 +360,7 @@
 		gap: 12px;
 		font-size: 0.92rem;
 		line-height: 1.5;
-		color: #d4d4d8;
+		color: #e2e8f0;
 	}
 
 	.tag {

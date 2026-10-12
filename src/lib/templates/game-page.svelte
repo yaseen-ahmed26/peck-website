@@ -114,16 +114,16 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		color: #f59e0b;
-		background: rgba(245, 158, 11, 0.1);
-		border: 1px solid rgba(245, 158, 11, 0.25);
+		color: #06b6d4;
+		background: rgba(6, 182, 212, 0.1);
+		border: 1px solid rgba(6, 182, 212, 0.25);
 		padding: 4px 10px;
 		border-radius: 6px;
 	}
 
 	.date {
 		font-size: 0.9rem;
-		color: #71717a;
+		color: #94a3b8;
 		font-weight: 500;
 	}
 
@@ -131,7 +131,7 @@
 		font-size: 2.8rem;
 		font-weight: 800;
 		letter-spacing: -0.03em;
-		color: #f4f4f5;
+		color: #f8fafc;
 	}
 
 	.action-bar {
@@ -153,22 +153,22 @@
 		transition: all 0.2s ease;
 	}
 
-	.btn-primary { background: #f59e0b; color: #09090b; }
-	.btn-primary:hover { background: #d97706; transform: translateY(-2px); }
-	.btn-secondary { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12); color: #f4f4f5; }
+	.btn-primary { background: #06b6d4; color: #0f172a; }
+	.btn-primary:hover { background: #0891b2; transform: translateY(-2px); }
+	.btn-secondary { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12); color: #f8fafc; }
 	.btn-secondary:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }
 
 	.notice-callout {
 		display: flex;
 		align-items: center;
 		gap: 14px;
-		background: #111115;
-		border-left: 4px solid #38bdf8;
+		background: #0f172a;
+		border-left: 4px solid #00ffff;
 		padding: 16px 20px;
 		border-radius: 0 8px 8px 0;
 		margin-bottom: 2rem;
 		font-size: 0.95rem;
-		color: #d4d4d8;
+		color: #e2e8f0;
 	}
 
 	.notice-icon {
@@ -177,8 +177,8 @@
 		justify-content: center;
 		width: 24px; height: 24px;
 		border-radius: 50%;
-		background: rgba(56, 189, 248, 0.15);
-		color: #38bdf8;
+		background: rgba(0, 255, 255, 0.15);
+		color: #00ffff;
 		font-weight: 700;
 		flex-shrink: 0;
 	}
@@ -186,14 +186,14 @@
 	:global(.blog-content) {
 		font-size: 1.1rem;
 		line-height: 1.75;
-		color: #d4d4d8;
+		color: #e2e8f0;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
 	}
 
 	:global(.blog-content p) { margin: 0; }
-	:global(.blog-content h3) { color: #f4f4f5; font-size: 1.5rem; margin-top: 1rem; }
+	:global(.blog-content h3) { color: #f8fafc; font-size: 1.5rem; margin-top: 1rem; }
 
 	.divider {
 		border: 0;
@@ -204,7 +204,7 @@
 
 	.dev-log h2 {
 		font-size: 1.8rem;
-		color: #f4f4f5;
+		color: #f8fafc;
 		margin-bottom: 2rem;
 	}
 
@@ -244,7 +244,7 @@
 	.version-number {
 		font-size: 1.1rem;
 		font-weight: 700;
-		color: #f4f4f5;
+		color: #f8fafc;
 	}
 
 	.version-badge {
@@ -252,16 +252,16 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
-		color: #10b981;
-		background: rgba(16, 185, 129, 0.12);
-		border: 1px solid rgba(16, 185, 129, 0.3);
+		color: #2dd4bf;
+		background: rgba(45, 212, 191, 0.12);
+		border: 1px solid rgba(45, 212, 191, 0.3);
 		padding: 2px 7px;
 		border-radius: 4px;
 	}
 
 	.toggle-icon {
 		font-size: 0.75rem;
-		color: #71717a;
+		color: #94a3b8;
 		transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
@@ -298,7 +298,7 @@
 		align-items: flex-start;
 		gap: 12px;
 		font-size: 0.95rem;
-		color: #a1a1aa;
+		color: #cbd5e1;
 		line-height: 1.5;
 	}
 

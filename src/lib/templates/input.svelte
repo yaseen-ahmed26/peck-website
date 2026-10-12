@@ -24,7 +24,7 @@
         position: relative;
         width: 100%;
         height: 50px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #94a3b8;
         margin: 1.25rem 0;
     }
     .input-box label{
@@ -50,7 +50,7 @@
         font-size: 1em;
         font-weight: 500;
         padding: 0 35px 0 5px;
-        color: white;
+        color: #f8fafc;
     }
 
     .input-box .icon{
@@ -60,6 +60,6 @@
         line-height: 57px;
         background: none;
         border: none;
-        color: white;
+        color: #7dd3fc;
     }
 </style>

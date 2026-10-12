@@ -26,7 +26,7 @@
         height: 38.2rem;
         max-width: 100%;
 
-        background: #111115;
+        background: #0f172a;
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 20px;
         box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
@@ -45,14 +45,14 @@
         font-size: 1.85rem;
         font-weight: 700;
         letter-spacing: -0.02em;
-        color: #f4f4f5;
+        color: #f8fafc;
     }
 
     .info p {
         padding: 0 30px;
         font-size: 0.95rem;
         line-height: 1.5;
-        color: #a1a1aa;
+        color: #cbd5e1;
     }
 
     @media (max-width: 560px) {

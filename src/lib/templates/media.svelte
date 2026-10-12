@@ -53,7 +53,7 @@
 		position: relative;
 		width: 100%;
 		aspect-ratio: 16/9;
-		background: #09090b;
+		background: #020617;
 		border-radius: 12px;
 		overflow: hidden;
 		border: 1px solid rgba(255, 255, 255, 0.08);
@@ -67,15 +67,15 @@
 		position: absolute;
 		bottom: 0; left: 0; right: 0;
 		padding: 30px 20px 16px;
-		background: linear-gradient(180deg, transparent 0%, rgba(9, 9, 11, 0.9) 100%);
+		background: linear-gradient(180deg, transparent 0%, rgba(2, 6, 23, 0.9) 100%);
 		pointer-events: none;
 	}
 
-	.caption { font-size: 0.95rem; font-weight: 500; color: #f4f4f5; }
+	.caption { font-size: 0.95rem; font-weight: 500; color: #f8fafc; }
 
 	.nav-btn {
 		position: absolute; top: 50%; transform: translateY(-50%);
-		background: rgba(9, 9, 11, 0.5); color: white;
+		background: rgba(2, 6, 23, 0.5); color: white;
 		border: 1px solid rgba(255, 255, 255, 0.1);
 		width: 36px; height: 36px; border-radius: 50%;
 		cursor: pointer; display: flex; justify-content: center; align-items: center;
@@ -95,6 +95,6 @@
 		background: rgba(255, 255, 255, 0.2); cursor: pointer; padding: 0; transition: background 0.2s ease;
 	}
 
-	.dot.active { background: #f59e0b; }
-	.placeholder { display: flex; height: 100%; align-items: center; justify-content: center; color: #71717a; }
+	.dot.active { background: #06b6d4; }
+	.placeholder { display: flex; height: 100%; align-items: center; justify-content: center; color: #94a3b8; }
 </style>

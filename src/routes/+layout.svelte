@@ -44,7 +44,7 @@
 
 <style>
 	:global(*){
-		color: #f4f4f5;
+		color: #f8fafc;
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 		margin: 0;
 		padding: 0;
@@ -55,7 +55,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		background-color: black;
+		background-color: #020617;
 	}
 
 	.page{
@@ -74,7 +74,7 @@
 
 	footer p{
 		font-size: 0.85rem;
-		color: #52525b;
+		color: #64748b;
 		letter-spacing: 0.02em;
 	}
 </style>

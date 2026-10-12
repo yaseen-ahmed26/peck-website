@@ -12,8 +12,8 @@ export function showToast(text){
         position: "center",
         stopOnFocus: true,
         style: {
-            background: "#000000",
-            color: "#FFFFFF",
+            background: "#0f172a",
+            color: "#f8fafc",
             border: "1px solid",
             borderRadius: "4px"
         }

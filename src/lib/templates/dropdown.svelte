@@ -27,7 +27,7 @@
     .dropbtn {
         background: none;
         border: none;
-        color: #a1a1aa;
+        color: #cbd5e1;
         font-size: 0.95rem;
         font-weight: 500;
         cursor: pointer;
@@ -40,12 +40,12 @@
     }
 
     .dropbtn:hover {
-        color: #f4f4f5;
+        color: #f8fafc;
     }
 
     .chevron {
         font-size: 0.75rem;
-        color: #71717a;
+        color: #94a3b8;
         transition: transform 0.2s ease;
     }
 
@@ -59,7 +59,7 @@
         top: calc(100% + 8px);
         left: 50%;
         transform: translateX(-50%);
-        background: #141418;
+        background: #1e293b;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         padding: 6px;
@@ -86,7 +86,7 @@
     .dropdown-content a {
         padding: 8px 12px;
         text-decoration: none;
-        color: #d4d4d8;
+        color: #e2e8f0;
         font-size: 0.9rem;
         font-weight: 500;
         border-radius: 6px;
@@ -95,6 +95,6 @@
 
     .dropdown-content a:hover {
         background: rgba(255, 255, 255, 0.07);
-        color: #f4f4f5;
+        color: #f8fafc;
     }
 </style>
