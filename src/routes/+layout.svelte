@@ -17,7 +17,9 @@
         "/register": "Register - Peck",
         "/details": "Account Details - Peck",
         "/code": "Link Game - Peck",
-        "/delete": "Delete Account - Peck"
+        "/delete": "Delete Account - Peck",
+		"/games/biscuit": "Biscuit - Peck",
+		"/games/rpr": "RPR - Peck"
     };
 
     let pageTitle = $derived(titles[page.url.pathname]);
