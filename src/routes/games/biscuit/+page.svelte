@@ -22,7 +22,7 @@
 				down how many columns we need to only around 8.</p>
 		`,
 		notice: "This game is no longer being updated.",
-		itchLink: "https://corporalchicken.itch.io/biscuit",
+		itchLink: "https://snowstrixstudios.itch.io/biscuit",
 		githubLink: "https://github.com/yaseen-ahmed26/biscuit-game",
 		media: [{type: "image", src: LandingPage, caption: "Biscuit"}],
 		changelog: [

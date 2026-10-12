@@ -20,7 +20,7 @@
 
 			<div class="btn-group">
 				
-				<a href="https://corporalchicken.itch.io" target="_blank" rel="noreferrer" class="btn btn-primary">
+				<a href="https://snowstrixstudios.itch.io/" target="_blank" rel="noreferrer" class="btn btn-primary">
 					Itch.io
 				</a>
 				<a href="https://github.com/yaseen-ahmed26" target="_blank" rel="noreferrer" class="btn btn-secondary">

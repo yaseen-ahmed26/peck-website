@@ -16,7 +16,7 @@
 		version: "2.1",
 		date: "October 12th, 2026",
 		notice: "",
-		itchLink: "https://corporalchicken.itch.io/rpr",
+		itchLink: "https://snowstrixstudios.itch.io/rpr",
 		githubLink: "https://github.com/yaseen-ahmed26/rock-paper-revamp",
 		media: [
 			{type: "image", src: RPR1, caption: "Selection Screen"}, 
