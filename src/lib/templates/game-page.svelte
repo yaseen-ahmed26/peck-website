@@ -10,7 +10,8 @@
 		itchLink = "",
 		githubLink = "",
 		media = [],
-		changelog = []
+		changelog = [],
+		children
 	} = $props();
 </script>
 
@@ -48,7 +49,11 @@
 	{/if}
 
 	<div class="blog-content">
-		{@html description}
+		{#if children}
+			{@render children()}
+		{:else}
+			{@html description}
+		{/if}
 	</div>
 
 	<hr class="divider" />
