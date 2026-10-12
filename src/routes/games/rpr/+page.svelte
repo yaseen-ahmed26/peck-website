@@ -1,9 +1,15 @@
 <script>
-	import GamePage from '$lib/templates/game-page.svelte';
 	import Media from '$lib/templates/media.svelte';
-	import RPR1 from '$lib/images/rpr_1.png'
-	import RPR2 from '$lib/images/rpr_2.mp4'
-	import RPR3 from '$lib/images/rpr_3.mp4'
+	import GamePage from '$lib/templates/game-page.svelte';
+
+	import RPR1 from '$lib/images/rpr_1.png';
+	import RPR2 from '$lib/images/rpr_2.mp4';
+	import RPR3 from '$lib/images/rpr_3.mp4';
+
+	import RPR_v2_GAME from '$lib/images/rpr_v2.0_game.png'
+	import RPR_v2_SELECTION from '$lib/images/rpr_v2.0_selection.png'
+	import RPR_v2_1_GAME from '$lib/images/rpr_v2.1_game.png'
+	import RPR_v2_1_SELECTION from '$lib/images/rpr_v2.1_selection.png'
 
 	const gameData = {
 		name: "Rock Paper Revamped",
@@ -18,6 +24,18 @@
 			{type: "video", src: RPR2, caption: "Results"}
 		],
 		changelog: [
+			{
+				version: "v2.1 (Settings) - 12/10/26",
+				changes: [
+					{tag: "Feature", tagClass: "tag-feature", text: "Settings, options for window type, max framerate, VSync, resolution and icon waterfall."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Search bar, filters for modifiers."},
+					{tag: "Feature", tagClass: "tag-feature", text: "Menu button icons and adjustments."},
+					{tag: "Change", tagClass: "tag-change", text: "Remade RPS game UI."},
+					{tag: "Balance", tagClass: "tag-balance", text: "Changed all the Token costs for modifiers."},
+					{tag: "Fix", tagClass: "tag-fix", text: "Prevent connecting account if you have no WIFI or the server is down."},
+					{tag: "Removal", tagClass: "tag-removal", text: "Removed several modifiers."}
+				]
+			},
 			{
 				version: "v2.0 (Economy) - 7/10/26",
 				changes: [
@@ -48,6 +66,15 @@
 			},
 		]
 	};
+
+	const settingMediaGame = [
+		{type: "image", src: RPR_v2_GAME, caption: "Before (v2.0)"},
+		{type: "image", src: RPR_v2_1_GAME, caption: "After (v2.1)"} 
+	]
+	const settingMediaSelection = [
+		{type: "image", src: RPR_v2_SELECTION, caption: "Before (v2.0)"},
+		{type: "image", src: RPR_v2_1_SELECTION, caption: "After (v2.1)"} 
+	]
 </script>
 
 <GamePage {...gameData}>
@@ -78,4 +105,26 @@
 		the hardest bit was probably deciding how much each modifier should cost. I had some fun with it deciding which should be behind a challenge, which should be purchaseable and
 		which should be already unlocked. As for the new modifiers, Thought Tax and Random Reset are reworked ones from the old game. Modifiers for this game had the philosophy of having a downside but a clear benefit.
 		This game was super fun to make and very satisfying too. Especially because the 4 new modifiers required zero code. They were all plug and play which was my goal for this remake.</p>
+
+	<h3>12/10/26: Settings</h3>
+	<p>So a lot of this update was just rewriting scenes and logic. The SaveManager, PeckManager, Profile screen etc all got rewritten to just be more organised. I guess localized chaos is better
+		than cross scene chaos. Also ended up remaking and redoing some of the UI elements, most notably the 2 screens below and some button changes. I also completely rewrote the Modifiers system.
+		So previously, it was only ever "if". Modifiers could only have 1 rule, essentially 'when X do Y' which limited how many modifiers I could make. This new ssystem allows for multiple rules,
+		essentially if/elif/else in concept. I also gave each modifier an internal state, before it could only really do things in the moment. Like there was no way for modifiers to know what happened on
+		other rounds.
+	</p>
+	<p>The biggest thing I added was settings. None of my old projects that I have ever made even touched settings because I thought it was a lot more complex than it actually was.
+		Godot handles a lot of things like VSync, window size, framerate etc with just a few lines. The hardest part was probably saving. So instead of saving "max_framerate": 60, it
+		instead stores numbers. Which is how I think actual programs do it. Each number corresponds to a specific option which the game just applies at runtime. 
+	</p>
+
+	<Media media={settingMediaGame} />
+	<p>RPS game remake. This is actually setup for another future idea I have that I may or may not get around to implementing. There's even a cool card flip animation.
+		The old UI was too text heavy.
+	</p>
+
+	<Media media={settingMediaSelection} />
+	<p>Main thing that changed was the modifier's column. Instead of big text buttons, use universally recognised buttons. Also tier each modifier so there's
+		some organisation.
+	</p>
 </GamePage>
