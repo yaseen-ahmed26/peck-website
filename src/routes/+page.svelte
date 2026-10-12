@@ -1,5 +1,5 @@
 <script>
-	import landingImage from '$lib/images/landing_image.png';
+	import landingImage from '$lib/images/rpr_v2.1_selection.png';
 </script>
 
 <div class="landing-container">
@@ -8,7 +8,7 @@
 			<span class="badge">Peck • v3.0</span>
 			<h1>Welcome to Peck</h1>
 			<p class="lead">
-				A hobby project with games that have cloud saves and cross progression. Try out one of the games on our Itch.io and save your data.
+				A hobby project with games that have cloud saves and cross progression. Try out one of the games on my Itch.io, or just have a look around here. Don't break anything please
 			</p>
 
 			<div class="notice-callout">
@@ -33,7 +33,7 @@
 			<div class="preview-card">
 				<img src={landingImage} alt="Preview of Biscuit Game" class="preview-img" />
 				<div class="preview-overlay">
-					<span class="game-tag">Biscuit</span>
+					<span class="game-tag">RPR</span>
 					<span class="game-status"></span>
 				</div>
 			</div>

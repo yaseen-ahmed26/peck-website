@@ -41,7 +41,9 @@
 </main>
 
 <footer>
-	<p>© 2026 Project Hatchlings</p>
+	<p>Made by 1 bored individual. Started off with just an idea and now I have too many repos and a domain.</p>
+	<br>
+	<p>© 2026 Snowstrix Studios</p>
 </footer>
 
 <style>
