@@ -13,8 +13,8 @@
 
 	const gameData = {
 		name: "Rock Paper Revamped",
-		version: "2.0",
-		date: "October 7th, 2026",
+		version: "2.1",
+		date: "October 12th, 2026",
 		notice: "",
 		itchLink: "https://corporalchicken.itch.io/rpr",
 		githubLink: "https://github.com/yaseen-ahmed26/rock-paper-revamp",
