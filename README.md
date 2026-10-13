@@ -1,7 +1,7 @@
 # Peck Website
 This is the website for the 'Peck' project.
 
-> **Live Demo:** [https://peck.projecthatchlings.xyz](https://peck.projecthatchlings.xyz)
+> **Live Demo:** [https://peck.snowstrix.com/](https://peck.snowstrix.com/)
 >
 > Note: a real email is not required. As long as the email has an `@` symbol, anything can be used.
 >
