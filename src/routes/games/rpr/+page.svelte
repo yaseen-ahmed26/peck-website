@@ -13,8 +13,8 @@
 
 	const gameData = {
 		name: "Rock Paper Revamped",
-		version: "2.1",
-		date: "October 12th, 2026",
+		version: "2.2.0",
+		date: "October 17th, 2026",
 		notice: "",
 		itchLink: "https://snowstrixstudios.itch.io/rpr",
 		githubLink: "https://github.com/yaseen-ahmed26/rock-paper-revamp",
@@ -25,7 +25,34 @@
 		],
 		changelog: [
 			{
-				version: "v2.1 (Settings) - 12/10/26",
+				version: "v2.2.0 (UI Remake) - 17/10/26",
+				changes: [
+					{tag: "Feature", tagClass: "tag-feature", text: "UI remake of all screens."},
+				]
+			},
+			{
+				version: "v2.1.1 - 15/10/26",
+				changes: [
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed completed challenges not updating when going back to the selection screen"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Prevent picking locked moved with keybinds"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed tokens not updating when purchasing modifiers"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed game not saving if you close the game unexpectedly"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Race to Zero gamemode not accounting for negative points"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Auto close pause overlay in RPS when restarting the game"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed some tasks not being checked for completion when the game ends"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Shattered Stalemate modifier never happening"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Thought Tax modifier taking your points into the negatives"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Duel Decay modifier making the timer go into the negatives"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Vampire Victory modifier awarding the point even if the AI has no points"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed cloud saving not happening when closing the game unexpectedly"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed data such as tokens not updating when connecting a Peck account"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed modifiers that affect the outcome from multiplying wins and streaks"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Fixed Wire to Wire (Best of) task from incorrectly evaluating"},
+					{tag: "Fix", tagClass: "tag-fix", text: "Results screen now correctly formats “times” vs “time” when displaying numbers"},
+				]
+			},
+			{
+				version: "v2.1.0 (Settings) - 12/10/26",
 				changes: [
 					{tag: "Feature", tagClass: "tag-feature", text: "Settings, options for window type, max framerate, VSync, resolution and icon waterfall."},
 					{tag: "Feature", tagClass: "tag-feature", text: "Search bar, filters for modifiers."},
@@ -37,7 +64,7 @@
 				]
 			},
 			{
-				version: "v2.0 (Economy) - 7/10/26",
+				version: "v2.0.0 (Economy) - 7/10/26",
 				changes: [
 					{tag: "Feature", tagClass: "tag-feature", text: "4 Modifiers: Thought Tax, Shattered Stalemate, Random Reset, Desperation Deal."},
 					{tag: "Feature", tagClass: "tag-feature", text: "Challenges now unlock Modifiers when completed."},
@@ -56,7 +83,7 @@
 				]
 			},
 			{
-				version: "v1.0 (Release) - 27/9/26",
+				version: "v1.0.0 (Release) - 27/9/26",
 				changes: [
 					{tag: "Feature", tagClass: "tag-feature", text: "26 Modifiers, 5 Gamemodes"},
 					{tag: "Feature", tagClass: "tag-feature", text: "Challenges, preset modifiers, a gamemode and opponent. Currently 4."},
@@ -70,10 +97,22 @@
 	const settingMediaGame = [
 		{type: "image", src: RPR_v2_GAME, caption: "Before (v2.0)"},
 		{type: "image", src: RPR_v2_1_GAME, caption: "After (v2.1)"} 
-	]
+	];
 	const settingMediaSelection = [
 		{type: "image", src: RPR_v2_SELECTION, caption: "Before (v2.0)"},
-		{type: "image", src: RPR_v2_1_SELECTION, caption: "After (v2.1)"} 
+		{type: "image", src: RPR_v2_1_SELECTION, caption: "After (v2.1)"}
+	];
+	const preUIRemake = [
+		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_main.png', caption: "Old Main Menu"},
+		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_challenges.png', caption: "Old Challenge Selection"},
+		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_profile.png', caption: "Old Profile Screen"},
+		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_selection.png', caption: "Old Selection"}
+	]
+	const UIRemake = [
+		{type: "image", src: '../src/lib/images/rpr_v2.2_main.png', caption: "New Main Menu"},
+		{type: "image", src: '../src/lib/images/rpr_v2.2_challenges.png', caption: "New Challenge Selection"},
+		{type: "image", src: '../src/lib/images/rpr_v2.2_profile.png', caption: "New Profile Screen"},
+		{type: "image", src: '../src/lib/images/rpr_v2.2_selection.png', caption: "New Selection"}
 	]
 </script>
 
@@ -127,4 +166,13 @@
 	<p>Main thing that changed was the modifier's column. Instead of big text buttons, use universally recognised buttons. Also tier each modifier so there's
 		some organisation.
 	</p>
+
+	<h3>17/10/26: UI Remake</h3>
+	<p>Now I am very clearly not a UI designer.. but holy was the initial designs ugly as hell. Like what was I thinking with bright blue and just yellow text? Not a clue but
+		I changed it to dark mode and it looks so much better. Just the layout of it, my favourite remake has to be the main selection screen. The modifier screen got much bigger and it
+		needed the extra space. There's also a ton of small animations which the old just didn't have.
+	</p>
+
+	<Media media={preUIRemake} />
+	<Media media={UIRemake} />
 </GamePage>
