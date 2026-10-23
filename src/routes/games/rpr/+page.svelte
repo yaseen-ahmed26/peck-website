@@ -11,6 +11,17 @@
 	import RPR_v2_1_GAME from '$lib/images/rpr_v2.1_game.png'
 	import RPR_v2_1_SELECTION from '$lib/images/rpr_v2.1_selection.png'
 
+	import MAIN_2_2 from '$lib/images/rpr_v2.2_main.png'
+	import PROFILE_2_2 from '$lib/images/rpr_v2.2_profile.png'
+	import CHALLENGE_2_2 from '$lib/images/rpr_v2.2_challenges.png'
+	import SELECTION_2_2 from '$lib/images/rpr_v2.2_selection.png'
+
+	import MAIN_PRE_2_2 from '$lib/images/rpr_pre_v2.2_main.png'
+	import PROFILE_PRE_2_2 from '$lib/images/rpr_pre_v2.2_profile.png'
+	import CHALLENGE_PRE_2_2 from '$lib/images/rpr_pre_v2.2_challenges.png'
+	import SELECTION_PRE_2_2 from '$lib/images/rpr_pre_v2.2_selection.png'
+
+
 	const gameData = {
 		name: "Rock Paper Revamped",
 		version: "2.2.0",
@@ -103,16 +114,16 @@
 		{type: "image", src: RPR_v2_1_SELECTION, caption: "After (v2.1)"}
 	];
 	const preUIRemake = [
-		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_main.png', caption: "Old Main Menu"},
-		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_challenges.png', caption: "Old Challenge Selection"},
-		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_profile.png', caption: "Old Profile Screen"},
-		{type: "image", src: '../src/lib/images/rpr_pre_v2.2_selection.png', caption: "Old Selection"}
+		{type: "image", src: MAIN_PRE_2_2, caption: "Old Main Menu"},
+		{type: "image", src: CHALLENGE_PRE_2_2, caption: "Old Challenge Selection"},
+		{type: "image", src: PROFILE_PRE_2_2, caption: "Old Profile Screen"},
+		{type: "image", src: SELECTION_PRE_2_2, caption: "Old Selection"}
 	]
 	const UIRemake = [
-		{type: "image", src: '../src/lib/images/rpr_v2.2_main.png', caption: "New Main Menu"},
-		{type: "image", src: '../src/lib/images/rpr_v2.2_challenges.png', caption: "New Challenge Selection"},
-		{type: "image", src: '../src/lib/images/rpr_v2.2_profile.png', caption: "New Profile Screen"},
-		{type: "image", src: '../src/lib/images/rpr_v2.2_selection.png', caption: "New Selection"}
+		{type: "image", src: MAIN_2_2, caption: "New Main Menu"},
+		{type: "image", src: CHALLENGE_2_2, caption: "New Challenge Selection"},
+		{type: "image", src: PROFILE_2_2, caption: "New Profile Screen"},
+		{type: "image", src: SELECTION_2_2, caption: "New Selection"}
 	]
 </script>
 
